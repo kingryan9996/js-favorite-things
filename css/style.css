@@ -1,0 +1,154 @@
+main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  transition: 0.5s;
+}
+main .main-wrap {
+  position: absolute;
+  transition: 0.5s;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+}
+main .main-wrap article section {
+  width: 100vw;
+  height: 100vh;
+}
+main .chapter01 {
+  width: 100%;
+  transition: 1s;
+}
+main .chapter01 .musinsa {
+  background-image: url(../img/logo-musinsa.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main .chapter01 .baemin {
+  background-image: url(../img/logo-baemin.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+main .chapter01 .coupang {
+  background-image: url(../img/logo-coupang.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+main .chapter02 {
+  width: 100%;
+  transition: 1s;
+}
+main .chapter02 .youtube {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.98);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 12px;
+}
+main .chapter02 .youtube .youtube-header {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+main .chapter02 .youtube .youtube-header .header-left {
+  display: flex;
+}
+main .chapter02 .youtube .youtube-header .header-left .menu-bar {
+  padding: 8px;
+}
+main .chapter02 .youtube .youtube-header .header-left .youtube-logo {
+  padding: 18px 14px 18px 16px;
+}
+main .chapter02 .youtube .youtube-header .header-center {
+  display: flex;
+  flex: 0 1 728px;
+  border-collapse: collapse;
+}
+main .chapter02 .youtube .youtube-header .header-center .search-left {
+  width: 100%;
+  max-width: 540px;
+  border: 1px solid gray;
+  border-radius: 40px 0 0 40px;
+  padding: 0 4px 0 16px;
+}
+main .chapter02 .youtube .youtube-header .header-center .search-right {
+  border: 1px solid gray;
+  border-radius: 0 40px 40px 0;
+}
+main .chapter02 .youtube .youtube-header .header-right {
+  display: flex;
+}
+main .chapter02 .youtube .youtube-main {
+  display: flex;
+}
+main .chapter02 .youtube .youtube-main .side-nav {
+  width: 240px;
+  border: 1px solid #ddd;
+  margin-right: 20px;
+}
+main .chapter02 .youtube .youtube-main .side-nav div {
+  width: 204px;
+  padding: 0 12px;
+}
+main .chapter02 .youtube .youtube-main .content-area .feed-filter {
+  border: 1px solid yellow;
+  height: 56px;
+  display: flex;
+}
+main .chapter02 .youtube .youtube-main .content-area .feed-filter div {
+  border: 1px solid coral;
+  font-size: 14px;
+  margin: 12px 12px 12px 0;
+}
+main .chapter02 .youtube .youtube-main .content-area .item-list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(330px, 360px));
+  grid-template-rows: repeat(5, minmax(300px, 1fr));
+}
+main .chapter02 .youtube .youtube-main .content-area .item-list div {
+  border: 1px solid red;
+}
+main .chapter02 .youtube-music {
+  background-image: url(../img/logo-youtube-music.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+main .chapter02 .instagram {
+  background-image: url(../img/logo-instagram.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.chapter03 {
+  width: 100%;
+  transition: 1s;
+}
+.chapter03 .kakao-talk {
+  background-image: url(../img/logo-kakao-talk.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.chapter03 .kakao-map {
+  background-image: url(../img/logo-kakao-map.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.chapter03 .hearth-stone {
+  background-image: url(../img/logo-hearthstone.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}/*# sourceMappingURL=style.css.map */
