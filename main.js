@@ -2,7 +2,8 @@ const elMain = document.querySelector(".main-wrap"),
   elArticle = document.querySelectorAll("article"),
   elSec = document.querySelectorAll("section"),
   elHeight = [];
-let move = 0;
+let moveHeight = 0;
+let moveWidth = 0;
 console.log(elArticle.length);
 
 // const cloneEl = () => {
@@ -28,14 +29,14 @@ function play(key) {
   //   console.log(event.wheelDelta);
   //   console.log();
   if (event.wheelDelta < 0) {
-    move = elSec[key].nextElementSibling.offsetTop;
+    moveHeight = elSec[key].nextElementSibling.offsetTop;
     console.log(elSec[key].clientHeight, "높이");
-    console.log(move);
-    elMain.style = `transform: translateY(-${move}px);`;
+    console.log(moveHeight);
+    elMain.style = `transform: translate(-${moveWidth}px,-${moveHeight}px);`;
   } else {
-    move = elSec[key].previousElementSibling.offsetTop;
-    console.log(move);
-    elMain.style = `transform : translateY(-${move}px);`;
+    moveHeight = elSec[key].previousElementSibling.offsetTop;
+    console.log(moveHeight);
+    elMain.style = `transform : translate(-${moveWidth}px,-${moveHeight}px);`;
   }
   //   console.log(move);
 }
@@ -60,15 +61,15 @@ elArticle.forEach((el, key) => {
 function moveSlide(key) {
   // if (key >= 0 || key < 3) {
   if (start < end) {
-    move = elArticle[key].previousElementSibling.offsetLeft;
+    moveWidth = elArticle[key].previousElementSibling.offsetLeft;
     console.log(key);
-    console.log(move, "1");
-    elMain.style = `transform: translateX(-${move}px);`;
+    console.log(moveWidth, "1");
+    elMain.style = `transform: translate(-${moveWidth}px,-${moveHeight}px);`;
   } else if (start > end) {
-    move = elArticle[key].nextElementSibling.offsetLeft;
+    moveWidth = elArticle[key].nextElementSibling.offsetLeft;
     console.log(key);
-    console.log(move, "2");
-    elMain.style = `transform: translateX(-${move}px);`;
+    console.log(moveWidth, "2");
+    elMain.style = `transform: translate(-${moveWidth}px,-${moveHeight}px);`;
   }
   // return;
   console.log("sta");
@@ -76,3 +77,4 @@ function moveSlide(key) {
   console.log("end");
   // }
 }
+    elMain.style = `transform: translate(-1920px, -937px);`;

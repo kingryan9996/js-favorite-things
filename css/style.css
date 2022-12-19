@@ -1,3 +1,4 @@
+@charset "UTF-8";
 main {
   position: fixed;
   top: 0;
@@ -9,7 +10,7 @@ main {
 main .main-wrap {
   position: absolute;
   transition: 0.5s;
-  width: 100%;
+  width: 200%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,19 +26,19 @@ main .chapter01 {
   transition: 1s;
 }
 main .chapter01 .musinsa {
-  background-image: url(../img/logo-musinsa.png);
+  background-image: url(../assets/img/musinsa/logo-musinsa.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 main .chapter01 .baemin {
-  background-image: url(../img/logo-baemin.png);
+  background-image: url(../assets/img/baemin/logo-baemin.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 main .chapter01 .coupang {
-  background-image: url(../img/logo-coupang.png);
+  background-image: url(../assets/img/coupang/logo-coupang.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -48,13 +49,11 @@ main .chapter02 {
 }
 main .chapter02 .youtube {
   color: #fff;
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.98);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  padding: 12px;
 }
 main .chapter02 .youtube .youtube-header {
+  padding-top: 12px;
   height: 40px;
   display: flex;
   justify-content: space-between;
@@ -87,67 +86,219 @@ main .chapter02 .youtube .youtube-header .header-center .search-right {
 main .chapter02 .youtube .youtube-header .header-right {
   display: flex;
 }
+main .chapter02 .youtube .youtube-header .header-right .user-profile img {
+  width: 32px;
+  border-radius: 50%;
+}
 main .chapter02 .youtube .youtube-main {
   display: flex;
 }
 main .chapter02 .youtube .youtube-main .side-nav {
-  width: 240px;
+  padding: 12px;
   border: 1px solid #ddd;
   margin-right: 20px;
 }
-main .chapter02 .youtube .youtube-main .side-nav div {
-  width: 204px;
+main .chapter02 .youtube .youtube-main .side-nav .common-menu {
+  width: 240px;
   padding: 0 12px;
+}
+main .chapter02 .youtube .youtube-main .side-nav .common-menu div {
+  height: 40px;
+}
+main .chapter02 .youtube .youtube-main .side-nav .personal-menu {
+  width: 240px;
+  padding: 0 12px;
+}
+main .chapter02 .youtube .youtube-main .side-nav .personal-menu div {
+  height: 40px;
+}
+main .chapter02 .youtube .youtube-main .side-nav .subscription-list {
+  width: 240px;
+  padding: 0 12px;
+}
+main .chapter02 .youtube .youtube-main .side-nav .subscription-list div {
+  height: 40px;
+}
+main .chapter02 .youtube .youtube-main .side-nav .subscription-list div img {
+  width: 24px;
+  border-radius: 50%;
 }
 main .chapter02 .youtube .youtube-main .content-area .feed-filter {
   border: 1px solid yellow;
-  height: 56px;
   display: flex;
 }
 main .chapter02 .youtube .youtube-main .content-area .feed-filter div {
   border: 1px solid coral;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #f1f1f1;
   font-size: 14px;
   margin: 12px 12px 12px 0;
+  border-radius: 10px;
+  padding: 12px;
+}
+main .chapter02 .youtube .youtube-main .content-area .feed-filter div span {
+  text-align: center;
 }
 main .chapter02 .youtube .youtube-main .content-area .item-list {
   display: grid;
-  grid-template-columns: repeat(5, minmax(330px, 360px));
-  grid-template-rows: repeat(5, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, minmax(330px, 360px));
+  grid-template-rows: repeat(3, minmax(300px, 1fr));
 }
-main .chapter02 .youtube .youtube-main .content-area .item-list div {
+main .chapter02 .youtube .youtube-main .content-area .item-list .item {
+  margin: 0 8px 40px;
   border: 1px solid red;
 }
-main .chapter02 .youtube-music {
-  background-image: url(../img/logo-youtube-music.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-main .chapter02 .instagram {
-  background-image: url(../img/logo-instagram.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.chapter03 {
+main .chapter02 .youtube .youtube-main .content-area .item-list .item figure img {
   width: 100%;
-  transition: 1s;
 }
-.chapter03 .kakao-talk {
-  background-image: url(../img/logo-kakao-talk.jpg);
+main .chapter02 .youtube .youtube-main .content-area .item-list .item figure figcaption {
+  display: flex;
+  margin-top: 12px;
+}
+main .chapter02 .youtube .youtube-main .content-area .item-list .item figure figcaption .avatar-link {
+  margin-right: 12px;
+}
+main .chapter02 .youtube .youtube-main .content-area .item-list .item figure figcaption .avatar-link .avatar-image img {
+  width: 36px;
+  border-radius: 50%;
+}
+main .chapter02 .youtube .youtube-main .content-area .item-list .item figure figcaption .media-content .media-title {
+  font-size: 16px;
+  color: #f1f1f1;
+  margin-bottom: 4px;
+}
+main .chapter02 .youtube .youtube-main .content-area .item-list .item figure figcaption .media-content span {
+  font-size: 14px;
+  color: #aaaaaa;
+}
+main .chapter02 .youtube-music {
+  color: #fff;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.98);
+}
+main .chapter02 .youtube-music a {
+  color: #fff;
+}
+main .chapter02 .youtube-music .youtube-music-header {
+  padding-top: 12px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+main .chapter02 .youtube-music .youtube-music-header .header-left {
+  display: flex;
+}
+main .chapter02 .youtube-music .youtube-music-header .header-left .youtube-music-logo {
+  padding: 18px 14px 18px 16px;
+}
+main .chapter02 .youtube-music .youtube-music-header .header-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 728px;
+  border-collapse: collapse;
+}
+main .chapter02 .youtube-music .youtube-music-header .header-center a span {
+  margin: 24px;
+  font-size: 20px;
+}
+main .chapter02 .youtube-music .youtube-music-header .header-center .search-btn span {
+  font-size: 20px;
+  margin: 24px 24px 24px 12PX;
+}
+main .chapter02 .youtube-music .youtube-music-header .header-right {
+  display: flex;
+}
+main .chapter02 .youtube-music .youtube-music-header .header-right .user-profile img {
+  width: 32px;
+  border-radius: 50%;
+}
+main .chapter02 .youtube-music .youtube-music-main {
+  margin: 50px auto 0;
+  width: 80%;
+  border: 2px solid red;
+  padding: 0 0 0 40px;
+}
+main .chapter02 .youtube-music .youtube-music-main .replay-list {
+  margin-bottom: 64px;
+}
+main .chapter02 .youtube-music .youtube-music-main .replay-list .replay-header h2 a {
+  font-size: 45px;
+}
+main .chapter02 .youtube-music .youtube-music-main .replay-list .item-list {
+  margin: 25px 0 64px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(255px, 255px));
+  grid-template-rows: repeat(1, minmax(307px, 307px));
+}
+main .chapter02 .youtube-music .youtube-music-main .replay-list .item-list .item {
+  border: 1px solid yellow;
+  margin-right: 24px;
+}
+main .chapter02 .youtube-music .youtube-music-main .replay-list .item-list .item figure {
+  width: auto;
+}
+main .chapter02 .youtube-music .youtube-music-main .replay-list .item-list .item figure img {
+  width: 100%;
+}
+main .chapter02 .youtube-music .youtube-music-main .replay-list .item-list .item figure figcaption {
+  margin-top: 10px;
+  width: 100%;
+}
+main .chapter02 .youtube-music .youtube-music-main .selection-list {
+  padding-top: 32px;
+}
+main .chapter02 .youtube-music .youtube-music-main .selection-list .selection-header span {
+  font-size: 16px;
+  color: #aaaaaa;
+}
+main .chapter02 .youtube-music .youtube-music-main .selection-list .selection-header h2 {
+  font-size: 45px;
+}
+main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li:hover figure::after {
+  display: block;
+}
+main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li a figure::after {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 48px;
+  height: 48px;
+  background-image: url(../assets/img/youtube-music/selection-items/play_arrow_fill1.svg);
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center;
 }
-.chapter03 .kakao-map {
-  background-image: url(../img/logo-kakao-map.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li a figure {
+  display: flex;
+  position: relative;
+  width: 350px;
 }
-.chapter03 .hearth-stone {
-  background-image: url(../img/logo-hearthstone.png);
+main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li a figure .popup img {
+  width: 48px;
+  height: 48px;
+}
+main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li a figure figcaption {
+  margin-left: 16px;
+  display: flex;
+  justify-content: space-around;
+}
+main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li a figure figcaption .visible strong {
+  color: #fff;
+  display: block;
+}
+main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li a figure figcaption .visible span {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li a figure figcaption .unvisible {
+  display: flex;
+}
+main .chapter02 .naver-webtoon {
+  background-image: url(../디자인시안/naver-webtonn.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

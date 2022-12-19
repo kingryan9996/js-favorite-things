@@ -8,7 +8,7 @@ main {
   .main-wrap {
     position: absolute;
     transition: 0.5s;
-    width: 100%;
+    width: 200%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,19 +25,19 @@ main {
     width: 100%;
     transition: 1s;
     .musinsa {
-      background-image: url(../img/logo-musinsa.png);
+      background-image: url(../assets/img/musinsa/logo-musinsa.png);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
     }
     .baemin {
-      background-image: url(../img/logo-baemin.png);
+      background-image: url(../assets/img/baemin/logo-baemin.png);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
     }
     .coupang {
-      background-image: url(../img/logo-coupang.png);
+      background-image: url(../assets/img/coupang/logo-coupang.png);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -48,13 +48,10 @@ main {
     transition: 1s;
     .youtube {
       color: #fff;
-      // background-image: url(../img/logo-youtube.png);
+      overflow: hidden;
       background-color: rgba($color: #000000, $alpha: 0.98);
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-      padding: 12px;
       .youtube-header {
+        padding-top: 12px;
         height: 40px;
         display: flex;
         justify-content: space-between;
@@ -89,74 +86,250 @@ main {
         }
         .header-right {
           display: flex;
+          .user-profile{
+            img{
+              width: 32px;
+            border-radius: 50%;
+            }
+          }
         }
       }
       .youtube-main {
         display: flex;
         .side-nav {
-          width: 240px;
+          padding: 12px;
           border: 1px solid #ddd;
           margin-right: 20px;
-          div {
-            width: 204px;
+          .common-menu {
+            width: 240px;
             padding: 0 12px;
+            div{              
+            height: 40px;
+            }
+          }
+          .personal-menu{
+            width: 240px;
+            padding: 0 12px;
+            div{              
+              height: 40px;
+              }
+          }
+          .subscription-list{
+            width: 240px;
+            padding: 0 12px;
+            div{              
+              height: 40px;
+              img{width: 24px;
+              border-radius: 50%;}
+              }
           }
         }
         .content-area {
           .feed-filter {
             border: 1px solid yellow;
-            height: 56px;
             display: flex;
             div {
               border: 1px solid coral;
+              background-color: rgba(255, 255, 255, 0.1)  ;
+              color: #f1f1f1;
               font-size: 14px;
               margin: 12px 12px 12px 0;
+              border-radius: 10px;
+              padding: 12px;
+              span{
+                text-align: center;
+              }
             }
           }
           .item-list {
             display: grid;
-            grid-template-columns: repeat(5, minmax(330px, 360px));
-            grid-template-rows: repeat(5, minmax(300px, 1fr));
-            div {
+            grid-template-columns: repeat(4, minmax(330px, 360px));
+            grid-template-rows: repeat(3, minmax(300px, 1fr));
+            .item {
+              margin: 0 8px 40px;
               border: 1px solid red;
+              figure{
+                img{
+                  width: 100%;
+                }
+                figcaption{
+                  display: flex;
+                  margin-top: 12px;
+                  .avatar-link{
+                    margin-right: 12px;
+                    .avatar-image{
+                      img{
+                        width: 36px;
+                        border-radius: 50%;
+                      }
+                    }
+                  }
+                  .media-content{
+                    .media-title{
+                      font-size: 16px;
+                      color: #f1f1f1;
+                      margin-bottom: 4px;
+                    }
+                    span{
+                      font-size: 14px;
+                      color: #aaaaaa;
+                    }
+                  }
+                }
+              }
             }
           }
         }
       }
     }
     .youtube-music {
-      background-image: url(../img/logo-youtube-music.png);
+      color: #fff;
+      overflow: hidden;
+      background-color: rgba($color: #000000, $alpha: 0.98);
+      a{
+        color:#fff;
+      }
+      .youtube-music-header {
+        padding-top: 12px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        .header-left {
+          display: flex;
+          .youtube-music-logo {
+            padding: 18px 14px 18px 16px;
+          }
+        }
+        .header-center {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex: 0 1 728px;
+          border-collapse: collapse;
+          a {
+            span{
+              margin: 24px;
+              font-size: 20px;}
+          }
+          .search-btn{
+            span{              
+            font-size: 20px;
+            margin: 24px 24px 24px 12PX;
+            }
+          }
+        }
+        .header-right {
+          display: flex;
+          .user-profile{
+            img{
+              width: 32px;
+            border-radius: 50%;
+            }
+          }
+        }
+      }
+      .youtube-music-main{
+        margin: 50px auto 0;
+        width: 80%;
+        border: 2px solid red;
+        padding: 0 0 0 40px;
+        .replay-list{margin-bottom: 64px;
+       .replay-header{
+          h2{
+            a{
+              font-size: 45px;
+            }
+          }
+       }
+        .item-list{
+          margin: 25px 0 64px;
+          width: 100%;
+          height: auto;
+          display: grid;
+            grid-template-columns: repeat(6, minmax(255px, 255px));
+            grid-template-rows: repeat(1, minmax(307px, 307px));
+            .item {
+              border: 1px solid yellow;
+              margin-right: 24px;
+              figure{
+                width: auto;
+                img{
+                  width: 100%;
+                }
+                figcaption{
+                  margin-top: 10px;
+                  width: 100%;
+                }
+              }
+            }
+        }
+      }
+      .selection-list{
+        padding-top: 32px;
+        .selection-header{
+          span{font-size: 16px;
+          color:#aaaaaa;}
+          h2{font-size: 45px;}
+        }
+        .item-list{
+          ul{
+            li:hover figure::after{
+              display: block;
+            }
+            li{
+              a{
+                figure::after{
+                  content: "";
+                  display: none;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  background-color: rgba(0, 0, 0, 0.8);
+                  width: 48px;
+                  height: 48px;
+                  background-image: url(../assets/img/youtube-music/selection-items/play_arrow_fill1.svg);
+                  background-repeat: no-repeat;
+                  background-position: center;
+                }
+                figure{
+                  display: flex;
+                  position: relative;
+                  width: 350px;
+                  .popup{                    
+                    img{width: 48px;
+                      height: 48px;
+                    }
+                  }
+                  figcaption{
+                    margin-left: 16px;
+                    display: flex;
+                    justify-content: space-around;
+                    .visible{
+                      strong{
+                        color:#fff;
+                        display: block;
+                      }
+                      span{
+                        color:rgba(255, 255, 255, 0.7)
+                      }
+                    }
+                    .unvisible{
+                      display: flex;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      }
+    }
+    .naver-webtoon {
+      background-image: url(../디자인시안/naver-webtonn.png);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
     }
-    .instagram {
-      background-image: url(../img/logo-instagram.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-    }
-  }
-}
-.chapter03 {
-  width: 100%;
-  transition: 1s;
-  .kakao-talk {
-    background-image: url(../img/logo-kakao-talk.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
-  .kakao-map {
-    background-image: url(../img/logo-kakao-map.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
-  .hearth-stone {
-    background-image: url(../img/logo-hearthstone.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
   }
 }
