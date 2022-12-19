@@ -86,10 +86,10 @@ main {
         }
         .header-right {
           display: flex;
-          .user-profile{
-            img{
+          .user-profile {
+            img {
               width: 32px;
-            border-radius: 50%;
+              border-radius: 50%;
             }
           }
         }
@@ -103,25 +103,27 @@ main {
           .common-menu {
             width: 240px;
             padding: 0 12px;
-            div{              
-            height: 40px;
+            div {
+              height: 40px;
             }
           }
-          .personal-menu{
+          .personal-menu {
             width: 240px;
             padding: 0 12px;
-            div{              
+            div {
               height: 40px;
-              }
+            }
           }
-          .subscription-list{
+          .subscription-list {
             width: 240px;
             padding: 0 12px;
-            div{              
+            div {
               height: 40px;
-              img{width: 24px;
-              border-radius: 50%;}
+              img {
+                width: 24px;
+                border-radius: 50%;
               }
+            }
           }
         }
         .content-area {
@@ -130,13 +132,13 @@ main {
             display: flex;
             div {
               border: 1px solid coral;
-              background-color: rgba(255, 255, 255, 0.1)  ;
+              background-color: rgba(255, 255, 255, 0.1);
               color: #f1f1f1;
               font-size: 14px;
               margin: 12px 12px 12px 0;
               border-radius: 10px;
               padding: 12px;
-              span{
+              span {
                 text-align: center;
               }
             }
@@ -148,29 +150,29 @@ main {
             .item {
               margin: 0 8px 40px;
               border: 1px solid red;
-              figure{
-                img{
+              figure {
+                img {
                   width: 100%;
                 }
-                figcaption{
+                figcaption {
                   display: flex;
                   margin-top: 12px;
-                  .avatar-link{
+                  .avatar-link {
                     margin-right: 12px;
-                    .avatar-image{
-                      img{
+                    .avatar-image {
+                      img {
                         width: 36px;
                         border-radius: 50%;
                       }
                     }
                   }
-                  .media-content{
-                    .media-title{
+                  .media-content {
+                    .media-title {
                       font-size: 16px;
                       color: #f1f1f1;
                       margin-bottom: 4px;
                     }
-                    span{
+                    span {
                       font-size: 14px;
                       color: #aaaaaa;
                     }
@@ -186,8 +188,8 @@ main {
       color: #fff;
       overflow: hidden;
       background-color: rgba($color: #000000, $alpha: 0.98);
-      a{
-        color:#fff;
+      a {
+        color: #fff;
       }
       .youtube-music-header {
         padding-top: 12px;
@@ -207,114 +209,148 @@ main {
           flex: 0 1 728px;
           border-collapse: collapse;
           a {
-            span{
+            span {
               margin: 24px;
-              font-size: 20px;}
+              font-size: 20px;
+            }
           }
-          .search-btn{
-            span{              
-            font-size: 20px;
-            margin: 24px 24px 24px 12PX;
+          .search-btn {
+            span {
+              font-size: 20px;
+              margin: 24px 24px 24px 12px;
             }
           }
         }
         .header-right {
           display: flex;
-          .user-profile{
-            img{
+          .user-profile {
+            img {
               width: 32px;
-            border-radius: 50%;
+              border-radius: 50%;
             }
           }
         }
       }
-      .youtube-music-main{
+      .youtube-music-main {
         margin: 50px auto 0;
         width: 80%;
         border: 2px solid red;
         padding: 0 0 0 40px;
-        .replay-list{margin-bottom: 64px;
-       .replay-header{
-          h2{
-            a{
-              font-size: 45px;
+        .replay-list {
+          margin-bottom: 64px;
+          .replay-header {
+            h2 {
+              a {
+                font-size: 45px;
+              }
             }
           }
-       }
-        .item-list{
-          margin: 25px 0 64px;
-          width: 100%;
-          height: auto;
-          display: grid;
+          .item-list {
+            margin: 25px 0 64px;
+            width: 100%;
+            height: auto;
+            display: grid;
             grid-template-columns: repeat(6, minmax(255px, 255px));
             grid-template-rows: repeat(1, minmax(307px, 307px));
             .item {
               border: 1px solid yellow;
               margin-right: 24px;
-              figure{
+              figure {
                 width: auto;
-                img{
+                img {
                   width: 100%;
                 }
-                figcaption{
+                figcaption {
                   margin-top: 10px;
                   width: 100%;
                 }
               }
             }
+          }
         }
-      }
-      .selection-list{
-        padding-top: 32px;
-        .selection-header{
-          span{font-size: 16px;
-          color:#aaaaaa;}
-          h2{font-size: 45px;}
-        }
-        .item-list{
-          ul{
-            li:hover figure::after{
-              display: block;
+        .selection-list {
+          padding-top: 32px;
+          .selection-header {
+            span {
+              font-size: 16px;
+              color: #aaaaaa;
             }
-            li{
-              a{
-                figure::after{
-                  content: "";
-                  display: none;
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                  background-color: rgba(0, 0, 0, 0.8);
-                  width: 48px;
-                  height: 48px;
-                  background-image: url(../assets/img/youtube-music/selection-items/play_arrow_fill1.svg);
-                  background-repeat: no-repeat;
-                  background-position: center;
-                }
-                figure{
-                  display: flex;
-                  position: relative;
-                  width: 350px;
-                  .popup{                    
-                    img{width: 48px;
-                      height: 48px;
-                    }
-                  }
-                  figcaption{
-                    margin-left: 16px;
-                    display: flex;
-                    justify-content: space-around;
-                    .visible{
-                      strong{
-                        color:#fff;
+            h2 {
+              font-size: 45px;
+            }
+          }
+          .item-list {
+            ul {
+              display: flex;
+              flex-wrap: wrap;
+              // li:hover figure::after {
+              //   display: block;
+              // }
+              // li:hover figure::after {
+              //   display: block;
+              // }
+              li {
+                width: 33%;
+                &:hover {
+                  a {
+                    figure {
+                      &::after {
                         display: block;
                       }
-                      span{
-                        color:rgba(255, 255, 255, 0.7)
+                      figcaption {
+                        .unvisible {
+                          display: block;
+                        }
                       }
                     }
-                    .unvisible{
+                  }
+                }
+                a {
+                  figure::after {
+                    content: "";
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    width: 48px;
+                    height: 48px;
+                    background-image: url(../assets/img/youtube-music/selection-items/play_arrow_fill1.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                  }
+                  figure {
+                    display: flex;
+                    position: relative;
+                    .popup {
+                      img {
+                        width: 48px;
+                        height: 48px;
+                      }
+                    }
+                    figcaption {
+                      margin-left: 16px;
                       display: flex;
+                      justify-content: space-around;
+                      .visible {
+                        strong {
+                          color: #fff;
+                          display: block;
+                        }
+                        span {
+                          color: rgba(255, 255, 255, 0.7);
+                        }
+                      }
+                      .unvisible {
+                        display: none;
+                        .hide-bar {
+                          display: flex;
+                          padding-top: 13px;
+                          div {
+                            margin: 0 7px;
+                          }
+                        }
+                      }
                     }
                   }
                 }
@@ -322,7 +358,6 @@ main {
             }
           }
         }
-      }
       }
     }
     .naver-webtoon {

@@ -204,7 +204,7 @@ main .chapter02 .youtube-music .youtube-music-header .header-center a span {
 }
 main .chapter02 .youtube-music .youtube-music-header .header-center .search-btn span {
   font-size: 20px;
-  margin: 24px 24px 24px 12PX;
+  margin: 24px 24px 24px 12px;
 }
 main .chapter02 .youtube-music .youtube-music-header .header-right {
   display: flex;
@@ -257,7 +257,17 @@ main .chapter02 .youtube-music .youtube-music-main .selection-list .selection-he
 main .chapter02 .youtube-music .youtube-music-main .selection-list .selection-header h2 {
   font-size: 45px;
 }
-main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li:hover figure::after {
+main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li {
+  width: 33%;
+}
+main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li:hover a figure::after {
+  display: block;
+}
+main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li:hover a figure figcaption .unvisible {
   display: block;
 }
 main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li a figure::after {
@@ -276,7 +286,6 @@ main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul
 main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li a figure {
   display: flex;
   position: relative;
-  width: 350px;
 }
 main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li a figure .popup img {
   width: 48px;
@@ -295,7 +304,14 @@ main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul
   color: rgba(255, 255, 255, 0.7);
 }
 main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li a figure figcaption .unvisible {
+  display: none;
+}
+main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li a figure figcaption .unvisible .hide-bar {
   display: flex;
+  padding-top: 13px;
+}
+main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li a figure figcaption .unvisible .hide-bar div {
+  margin: 0 7px;
 }
 main .chapter02 .naver-webtoon {
   background-image: url(../디자인시안/naver-webtonn.png);
