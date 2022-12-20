@@ -77,4 +77,4 @@ function moveSlide(key) {
   console.log("end");
   // }
 }
-    elMain.style = `transform: translate(-1920px, -937px);`;
+    elMain.style = `transform: translate(-1920px, -1874px);`;

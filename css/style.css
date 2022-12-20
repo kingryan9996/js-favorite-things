@@ -1,4 +1,3 @@
-@charset "UTF-8";
 main {
   position: fixed;
   top: 0;
@@ -259,13 +258,24 @@ main .chapter02 .youtube-music .youtube-music-main .selection-list .selection-he
 }
 main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  height: 250px;
 }
 main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li {
   width: 33%;
+  margin: 0 24px 16px 0;
+}
+main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li:nth-child(4n) {
+  margin-bottom: 0;
 }
 main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li:hover a figure::after {
   display: block;
+}
+main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li:hover a figure figcaption {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li:hover a figure figcaption .unvisible {
   display: block;
@@ -296,6 +306,11 @@ main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul
   display: flex;
   justify-content: space-around;
 }
+main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li a figure figcaption .visible {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul li a figure figcaption .visible strong {
   color: #fff;
   display: block;
@@ -314,8 +329,138 @@ main .chapter02 .youtube-music .youtube-music-main .selection-list .item-list ul
   margin: 0 7px;
 }
 main .chapter02 .naver-webtoon {
-  background-image: url(../디자인시안/naver-webtonn.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-header {
+  width: 960px;
+  margin: 0 auto;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-header .webtoon-header-line01 {
+  display: flex;
+  justify-content: space-between;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-header .webtoon-header-line01 .webtoon-header-left {
+  display: flex;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-header .webtoon-header-line01 .webtoon-header-left .naver-logo {
+  background-image: url("../assets/img/naver-webtoon/naver-logo.svg");
+}
+main .chapter02 .naver-webtoon .naver-webtoon-header .webtoon-header-line01 .webtoon-header-left .naver-logo a {
+  background-image: url("../assets/img/naver-webtoon/naver-logo.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-header .webtoon-header-line01 .webtoon-header-left .naver-logo .naver-home {
+  background-position: -111px -28px;
+  width: 60px;
+  height: 12px;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-header .webtoon-header-line01 .webtoon-header-left .naver-logo .naver-webtoon {
+  background-position: -4px -133px;
+  width: 42px;
+  height: 27px;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-header .webtoon-header-line01 .webtoon-header-left .naver-logo .naver-novel {
+  background-position: -109px -55px;
+  width: 47px;
+  height: 19px;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-header .webtoon-header-line01 .webtoon-header-left .naver-logo .naver-series {
+  background-position: -4px -106px;
+  width: 47px;
+  height: 19px;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-header .webtoon-header-line01 .webtoon-header-right {
+  display: flex;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-header .webtoon-header-line02 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-header .webtoon-header-line02 .webtoon-category ul {
+  display: flex;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-header .webtoon-header-line02 .webtoon-category ul li {
+  margin: 5px;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-header .comic-category .category-list {
+  display: flex;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-header .comic-category .category-list li {
+  border: 1px solid turquoise;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left {
+  width: 694px;
+  border: 1px solid coral;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .days-list .days-list-ul {
+  display: flex;
+  border-bottom: 2px solid #ddd;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .days-list .days-list-ul li {
+  border: 1px solid slateblue;
+  margin: 5px;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .new-webtoon ul {
+  display: flex;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .new-webtoon ul li {
+  border: 1px solid orange;
+  margin: 5px;
+  width: 218px;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .new-webtoon ul li figure img {
+  width: 100%;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-banner {
+  width: 100%;
+  height: 60px;
+  border: 1px solid blue;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-list-board .board-line01 {
+  display: flex;
+  justify-content: space-between;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-list-board .board-line01 h2 {
+  font-size: 30px;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-list-board .board-line01 .view-type span {
+  font-size: 20px;
+  border: 1px solid orchid;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-list-board .board-line02 {
+  display: flex;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-list-board .board-line02 .webtoon-mon {
+  width: 100px;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-list-board .board-line02 .webtoon-tue {
+  width: 100px;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-list-board .board-line02 .webtoon-wed {
+  width: 100px;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-list-board .board-line02 .webtoon-thu {
+  width: 100px;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-list-board .board-line02 .webtoon-fri {
+  width: 100px;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-list-board .board-line02 .webtoon-sat {
+  width: 100px;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-list-board .board-line02 .webtoon-sun {
+  width: 100px;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-right {
+  width: 240px;
+  border: 1px solid cornflowerblue;
 }/*# sourceMappingURL=style.css.map */
