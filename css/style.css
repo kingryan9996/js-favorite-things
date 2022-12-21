@@ -25,10 +25,37 @@ main .chapter01 {
   transition: 1s;
 }
 main .chapter01 .musinsa {
-  background-image: url(../assets/img/musinsa/logo-musinsa.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  border: 1px solid rebeccapurple;
+  overflow: hidden;
+}
+main .chapter01 .musinsa .musinsa-header .extend-banner {
+  height: 70px;
+  border: 1px solid sandybrown;
+}
+main .chapter01 .musinsa .musinsa-header .header-content div {
+  border: 1px solid steelblue;
+}
+main .chapter01 .musinsa .musinsa-header .header-content .line01 {
+  height: 78px;
+  background-color: #000;
+  color: #fff;
+}
+main .chapter01 .musinsa .musinsa-header .header-content .line02 {
+  height: 51px;
+}
+main .chapter01 .musinsa .musinsa-header .header-content .line03 {
+  height: 50px;
+}
+main .chapter01 .musinsa .musinsa-main {
+  display: flex;
+}
+main .chapter01 .musinsa .musinsa-main .main-left {
+  width: 270px;
+  border: 1px solid forestgreen;
+}
+main .chapter01 .musinsa .musinsa-main .main-right {
+  min-width: 1229px;
+  border: 1px solid mediumvioletred;
 }
 main .chapter01 .baemin {
   background-image: url(../assets/img/baemin/logo-baemin.png);
@@ -396,8 +423,10 @@ main .chapter02 .naver-webtoon .naver-webtoon-main {
   width: 960px;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
 }
 main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left {
+  padding-left: 10px;
   width: 694px;
   border: 1px solid coral;
 }
@@ -442,6 +471,22 @@ main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-l
 main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-list-board .board-line02 .webtoon-mon {
   width: 100px;
 }
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-list-board .board-line02 .webtoon-mon ul li {
+  width: 100px;
+  border: 1px solid navy;
+  margin-bottom: 7px;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-list-board .board-line02 .webtoon-mon ul li a figure img {
+  width: 83px;
+  height: 107px;
+  border: 1px solid olive;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-list-board .board-line02 .webtoon-mon ul li a figure figcaption {
+  font-size: 11px;
+  color: #434343;
+  margin-bottom: 1px;
+  line-height: 16px;
+}
 main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-list-board .board-line02 .webtoon-tue {
   width: 100px;
 }
@@ -462,5 +507,22 @@ main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-l
 }
 main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-right {
   width: 240px;
+  padding-right: 10px;
   border: 1px solid cornflowerblue;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-right div {
+  margin-bottom: 8px;
+  border: 1px solid salmon;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-right .webtoon-upload {
+  height: 42px;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-right .webtoon-banner {
+  height: 240px;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-right .new-webtoon {
+  height: 97px;
+}
+main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-right .rising-webtoon {
+  height: 296px;
 }/*# sourceMappingURL=style.css.map */

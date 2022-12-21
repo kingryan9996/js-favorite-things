@@ -25,10 +25,41 @@ main {
     width: 100%;
     transition: 1s;
     .musinsa {
-      background-image: url(../assets/img/musinsa/logo-musinsa.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
+      border: 1px solid rebeccapurple;
+      overflow: hidden;
+      .musinsa-header{        
+        .extend-banner{
+          height: 70px;
+          border: 1px solid sandybrown;
+        }
+        .header-content{
+          div{
+            border: 1px solid steelblue;
+          }
+          .line01{
+            height: 78px;
+            background-color: #000;
+            color: #fff;
+          }
+          .line02{
+            height: 51px;
+          }
+          .line03{
+            height: 50px;
+          }
+        }
+      }
+      .musinsa-main{
+        display: flex;
+        .main-left{
+          width: 270px;
+          border: 1px solid forestgreen;
+        }
+        .main-right{
+          min-width: 1229px;
+          border: 1px solid mediumvioletred;
+        }
+      }
     }
     .baemin {
       background-image: url(../assets/img/baemin/logo-baemin.png);
@@ -430,8 +461,10 @@ main {
         width: 960px;
         margin: 0 auto;
         display: flex;
+        justify-content: space-between;
         
         .webtoon-main-left{
+          padding-left: 10px;
           width: 694px;
           border: 1px solid coral;
           .days-list{
@@ -479,19 +512,61 @@ main {
             .board-line02{
               display: flex;
               
-              .webtoon-mon{width: 100px;}
-              .webtoon-tue{width: 100px;}
-              .webtoon-wed{width: 100px;}
-              .webtoon-thu{width: 100px;}
-              .webtoon-fri{width: 100px;}
-              .webtoon-sat{width: 100px;}
-              .webtoon-sun{width: 100px;}
+              .webtoon-mon{width: 100px;
+              ul{
+                li{width: 100px;
+                  border: 1px solid navy;
+                  margin-bottom: 7px;
+                  a{
+                    figure{
+                      img{width: 83px;
+                      height: 107px;
+                    border: 1px solid olive;}
+                    figcaption{
+                      font-size: 11px;
+                      color: #434343;
+                      margin-bottom: 1px;
+                      line-height: 16px;
+                    }
+                    }
+                  }
+                }
+              }}
+              .webtoon-tue{width: 100px;
+              }
+              .webtoon-wed{width: 100px;
+              }
+              .webtoon-thu{width: 100px;
+              }
+              .webtoon-fri{width: 100px;
+              }
+              .webtoon-sat{width: 100px;
+              }
+              .webtoon-sun{width: 100px;
+              }
             }
           }
         }
         .webtoon-main-right{
           width: 240px;
+          padding-right: 10px;
           border: 1px solid cornflowerblue;
+          div{
+            margin-bottom: 8px;
+            border: 1px solid salmon;
+          }
+          .webtoon-upload{
+            height: 42px;
+          }
+          .webtoon-banner{
+            height: 240px;
+          }
+          .new-webtoon{
+            height: 97px;
+          }
+          .rising-webtoon{
+            height: 296px;
+          }
         }
       }
     }
