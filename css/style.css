@@ -25,7 +25,6 @@ main .chapter01 {
   transition: 1s;
 }
 main .chapter01 .musinsa {
-  border: 1px solid rebeccapurple;
   overflow: hidden;
 }
 main .chapter01 .musinsa .musinsa-header .extend-banner {
@@ -64,10 +63,18 @@ main .chapter01 .baemin {
   background-position: center;
 }
 main .chapter01 .coupang {
-  background-image: url(../assets/img/coupang/logo-coupang.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  overflow: hidden;
+}
+main .chapter01 .coupang .coupang-header .extend-banner {
+  height: 70px;
+  border-bottom: 1px solid #cac6c3;
+}
+main .chapter01 .coupang .coupang-header .header-content .line01 {
+  height: 32px;
+  background-color: #f0f0f0;
+}
+main .chapter01 .coupang .coupang-header .header-content .line02 {
+  height: 115px;
 }
 main .chapter02 {
   width: 100%;
@@ -423,10 +430,8 @@ main .chapter02 .naver-webtoon .naver-webtoon-main {
   width: 960px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
 }
 main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left {
-  padding-left: 10px;
   width: 694px;
   border: 1px solid coral;
 }
@@ -470,22 +475,6 @@ main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-l
 }
 main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-list-board .board-line02 .webtoon-mon {
   width: 100px;
-}
-main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-list-board .board-line02 .webtoon-mon ul li {
-  width: 100px;
-  border: 1px solid navy;
-  margin-bottom: 7px;
-}
-main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-list-board .board-line02 .webtoon-mon ul li a figure img {
-  width: 83px;
-  height: 107px;
-  border: 1px solid olive;
-}
-main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-list-board .board-line02 .webtoon-mon ul li a figure figcaption {
-  font-size: 11px;
-  color: #434343;
-  margin-bottom: 1px;
-  line-height: 16px;
 }
 main .chapter02 .naver-webtoon .naver-webtoon-main .webtoon-main-left .webtoon-list-board .board-line02 .webtoon-tue {
   width: 100px;
